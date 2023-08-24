@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcular média</title>
+</head>
+<body>
+
+  <input type="number" name="av1" id="av1" value="0">
+  <input type="number" name="av2" id="av2" value="0">
+  <input type="number" name="av3" id="av3" value="0">
+
+  <button onclick="media()">Calcular média</button>
+
+  <script type="text/javascript">
+
+    const media = function() {
+      const inputs = document.getElementsByTagName('input')
+      const av1 = parseFloat(inputs[0].value)
+      const av2 = parseFloat(inputs[1].value)
+      const av3 = parseFloat(inputs[2].value)
+     
+      const m = (av1 + av2 + av3) / 3
+
+     if (m >= 6) document.write('aprovado')
+     else document.write('reprovado')
+    }
+
+  </script>
+  
+</body>
+</html>
