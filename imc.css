@@ -1,0 +1,9 @@
+.bg-red {
+  background-color: #ff0000;
+  color: #fff;
+  min-height: 48px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  padding: 30px 0;
+  text-align: center;
+}
