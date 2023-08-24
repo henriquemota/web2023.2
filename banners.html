@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banners</title>
+
+
+  <script type="text/javascript">
+
+    const frutas = [
+      {
+        name: 'banana', 
+        img: 'https://img.freepik.com/vetores-gratis/bando-de-banana-amarela-madura-de-vetor-isolado-no-fundo-branco_1284-45456.jpg', 
+        price: 10
+      },
+      {
+        name: 'maçã', 
+        img: 'https://img.freepik.com/vetores-gratis/bando-de-banana-amarela-madura-de-vetor-isolado-no-fundo-branco_1284-45456.jpg', 
+        price: 20
+      },
+    ]
+  </script>
+
+
+</head>
+<body>
+  <h1>Minha loja virtual</h1>
+  <div id="produtos"></div>
+
+
+  <script type="text/javascript">
+
+    const meudiv = document.getElementById('produtos')
+    for (let index = 0; index < frutas.length; index++) {
+      const element = frutas[index];
+      meudiv.innerHTML += `<p>${element.name}</p><img src='${element.img}' /><p>${element.price}</p><hr />`
+    }
+
+  </script>
+</body>
+</html>
