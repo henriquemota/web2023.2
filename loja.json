@@ -1,0 +1,20 @@
+[
+	{
+		"id": 1,
+		"nome": "produto 01",
+		"img": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+		"preco": 20.3
+	},
+	{
+		"id": 2,
+		"nome": "produto 02",
+		"img": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+		"preco": 20.3
+	},
+	{
+		"id": 3,
+		"nome": "produto 03",
+		"img": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+		"preco": 20.3
+	}
+]
