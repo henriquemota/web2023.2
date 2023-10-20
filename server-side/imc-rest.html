@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <title>IMC Client e Server Site</title>
+
+  <script>
+    function calcularIMC() {
+      const peso = document.getElementById('peso').value;
+      const altura = document.getElementById('altura').value;
+      axios
+      .post('http://127.0.0.1/server-side/imc-rest.php', {peso: peso, altura: altura})
+      .then(({data}) => document.getElementById('resultado').innerHTML = data.imc)
+      .catch((err) => console.log(err))
+    }
+  </script>
+</head>
+<body>
+
+    <label for="peso">Peso</label>
+    <input type="text" name='peso' id='peso' value="122"/>
+    <br />
+    <label for="altura">Altura</label>
+    <input type="text" name='altura' id='altura' value="1.74"/>
+    <br />
+    <input type="button" value="Processar" onclick="calcularIMC()">
+    <p id="resultado"></p>
+  
+</body>
+</html>
